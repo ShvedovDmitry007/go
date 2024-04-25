@@ -60,6 +60,73 @@
       <li><a href="neon.html" target="_blank">Neon style</a></li>
     </ol>
 
+    <h2>Забронировать</h2>
+
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="my-form">
+      <fieldset>
+        <input type="radio" name="halls" value="vibes">80's vibes
+        <input type="radio" name="halls" value="sw">Star wars
+        <input type="radio" name="halls" value="west">Wild west
+        <input type="radio" name="halls" value="style">Neon style
+      </fieldset>
+
+      <fieldset>
+        <legend>Собери набор развлечений</legend>
+        <fieldset>
+          <legend>Приставка:</legend>
+            <input type="radio" name="console" value="ps">PlayStation
+            <input type="radio" name="console" value="sega">Sega Mega Drive
+            <input type="radio" name="console" value="xbox">X-box One S
+            <input type="radio" name="console" value="dendy">Dendy
+        </fieldset>
+
+        <fieldset>
+          <legend>Настольные игры:</legend>
+            <input type="checkbox" name="boardgames" value="jenga">Jenga
+            <input type="checkbox" name="boardgames" value="monopoly">Monopoly
+            <input type="checkbox" name="boardgames" value="munchkin">Манчкин
+            <input type="checkbox" name="boardgames" value="alias">Alias
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно:</legend>
+            <input type="checkbox" name="add" value="karaoke">Караоке
+            <input type="checkbox" name="add" value="vr">VR
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выберете дату и время</legend>
+          <label>Дата*
+            <input type="date" name="date" required>  
+          </label>
+          <label>Время*
+            <input type="time" name="time" required>
+          </label>
+          <label>Количество человек*
+            <input type="number" min="1" name="person" required>
+          </label>
+          <label>Имя*
+            <input type="text" name="name" required>
+          </label>
+          <label>Фамилия*
+            <input type="text" name="surname" required>
+          </label>
+          <label>Номер телефона*
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            <input type="checkbox" required>Я старше 18 лет*
+          </label>
+      </fieldset>
+
+      <button type="submit">Забронирова</button>
+      <label>
+        <input type="checkbox" form="my-form" required > Согласен на обработку данных
+      </label>
+
+    </form>
+
     <h2>О нас</h2>
 
     <p>
