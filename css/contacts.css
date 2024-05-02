@@ -1,0 +1,42 @@
+.contacts__address-group {
+  margin-bottom: 39px;
+  max-width: 480px;
+  width: 100%;
+}
+
+.contacts__address-item {
+  margin-bottom: 11px;
+}
+
+.contacts__address-item:first-child {
+  margin-bottom: 38px;
+}
+
+.contacts__address-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__address-link {
+  padding-left: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.contacts__address-link_address {
+  background-image: url('/img/location.svg');
+}
+
+.contacts__address-link_phone {
+  background-image: url('/img/phone.svg');
+}
+
+.contacts__address-link_e-mail {
+  background-image: url('/img/mail.svg');
+}
+
+.contacts__social-list {
+  display: flex;
+  gap: 26px;
+}
+

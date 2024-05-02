@@ -1,22 +1,33 @@
-.item {
+.faq__title {
+  margin-bottom: 40px;
+}
+
+.faq__list {
+  list-style-type: none;
+}
+
+.faq__item {
   background-color: #fff;
   color: #1C1A1A;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-weight: 700;
   font-size: 24px;
   padding: 30px 70px;
   margin-bottom: 20px;
 }
 
-.item:nth-child(even) {
+.faq__item:nth-child(even) {
   background-color: #440F51;
   color: #fff;
 }
 
-.item:after {
+.faq__item:after {
   content: url('/img/open-purple.svg');
 
 } 
 
-.item:nth-child(even):after {
+.faq__item:nth-child(even):after {
   content: url('/img/open.svg');
 }

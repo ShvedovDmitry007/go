@@ -6,76 +6,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <title>GAME OVER</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <a href="index.html">
-        <img src="img/logo.svg" alt="Логотип игровой территории GAME OVER">
+    <header class="header">
+      <a class="header__logo-link" href="index.html">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип игровой территории GAME OVER">
       </a>
   
-      <div>
-        <h2>Меню</h2>
+      <div class="header__menu">
+        <h2 class="header__title">Меню</h2>
   
-        <nav>
-          <ul>
-            <li><a href="#halls">Залы</a></li>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#reserv">Бронь</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#halls">Залы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#about">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#reserv">Бронь</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#contacts">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
   
-    <main>
-      <section>
+    <main class="main">
+      <section class="hero">
         <div>
-          <h1>У нас есть всё для классного отдыха с друзьями!</h1>
+          <h1 class="hero__title">Game over</h1>
+
+          <p class="hero__description">Новый формат игр и отдыха</p>
+        </div>
+      </section>
+
+      <section class="rest">
+        <div>
+          <h2 class="rest__title">У нас есть всё для классного отдыха с друзьями!</h2>
   
-          <ul>
-            <li>
-              <img src="img/vr.png" alt="Очки виртуальной реальности">VR очки
+          <ul class="rest__list">
+            <li class="rest__item">
+              <img class="rest__image" src="img/vr.png" alt="Очки виртуальной реальности">VR очки
             </li>
-            <li>
-              <img src="img/audio.png" alt="Аудио-система">Аудио-система 5.1 с отличным звуком
+
+            <li class="rest__item">
+              <img class="rest__image" src="img/audio.png" alt="Аудио-система">Аудио-система 5.1 с отличным звуком
             </li>
-            <li>
-              <img src="img/micro.png" alt="Караоке">Караоке (4 микрофона)
+
+            <li class="rest__item">
+              <img class="rest__image" src="img/micro.png" alt="Караоке">Караоке (4 микрофона)
             </li>
-            <li>
-              <img src="img/game.png" alt="Настольные игры">Настольные игры
+
+            <li class="rest__item">
+              <img class="rest__image" src="img/game.png" alt="Настольные игры">Настольные игры
             </li>
-            <li>
-              <img src="img/netflix.png" alt="Сервисы для просмотра кино">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск,
+
+            <li class="rest__item">
+              <img class="rest__image" src="img/netflix.png" alt="Сервисы для просмотра кино">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск,
               Okko
             </li>
-            <li>
-              <img src="img/sony.png" alt="Игровая приставка PlayStation 5">PlayStation 5
+
+            <li class="rest__item">
+              <img class="rest__image" src="img/sony.png" alt="Игровая приставка PlayStation 5">PlayStation 5
             </li>
           </ul>
         </div>
       </section>
   
-      <section id="halls">
+      <section class="halls" id="halls">
         <div>
-          <h2>Наши залы</h2>
+          <h2 class="halls__title">Наши залы</h2>
   
-          <ol>
-            <li><a href="vibes.html" target="_blank">80's vibes</a></li>
-            <li><a href="starwars.html" target="_blank">Star wars</a></li>
-            <li><a href="wildwest.html" target="_blank">Wild west</a></li>
-            <li><a href="neon.html" target="_blank">Neon style</a></li>
+          <ol class="halls__list">
+            <li class="halls__item halls__item_vibes">
+              <a class="halls__link" href="vibes.html" target="_blank">80's vibes</a>
+            </li>
+            <li class="halls__item halls__item_starwars">
+              <a class="halls__link" href="starwars.html" target="_blank">Star wars</a>
+            </li>
+            <li class="halls__item halls__item_wildwest">
+              <a class="halls__link" href="wildwest.html" target="_blank">Wild west</a>
+            </li>
+            <li class="halls__item halls__item_neon">
+              <a class="halls__link" href="neon.html" target="_blank">Neon style</a>
+            </li>
           </ol>
         </div>
       </section>
   
-      <section id="reserv">
+      <section class="reserv" id="reserv">
         <div>
-          <h2>Забронировать зал просто</h2>
+          <h2 class="reserv__title">Забронировать</h2>
   
           <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="my-form">
   
@@ -151,68 +182,70 @@
         </div>
       </section>
   
-      <section id="about">
+      <section class="about" id="about">
         <div>
-          <h2>О нас</h2>
-  
-          <p>
-            Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в
-            центральной части города.
-          </p>
-          <p>
-            Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
-            разработками со всего мира
-          </p>
-  
-          <blockquote>
-            <p>
-              <q><strong>GAME OVER</strong> — это место незабываемых впечатлений</q>
+          <h2 class="about__title">О нас</h2>
+
+          <div class="about__content">
+            <p class="about__description">
+              Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в
+              центральной части города.
             </p>
+            <p class="about__description">
+              Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+              разработками со всего мира
+            </p>
+          </div>
   
-            <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+          <blockquote class="about__blockquote">
+            <q class="about__quote"><strong>GAME OVER</strong> — это место незабываемых впечатлений</q>
+  
+            <div>
+              <img class="about__photo" src="/img/boss-photo.png" alt="Фотография основателя игровой территории Game Over">
+              <cite class="about__cite">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+            </div>
           </blockquote>
         </div>
       </section>
   
-      <section id="reviews">
+      <section class="reviews" id="reviews">
         <div>
-          <h2>Отзывы поситителей</h2>
+          <h2 class="reviews__title">Отзывы поситителей</h2>
   
-          <ul>
-            <li>
-              <div>
-  
-                <figure>
-                  <img src="#" alt="Фото поситителя">
-                  <figcaption>Макс Самойлов</figcaption>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__visitor">
+                <figure class="reviews__visitor-info">
+                  <img class="reviews__visitor-photo" src="#" alt="Фото поситителя">
+                  <figcaption class="reviews__visitor-name">Макс Самойлов</figcaption>
                 </figure>
-                <p>
+                <p class="reviews__visitor-descr">
                   Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда
                   еще я не был в таком полном игровом погружении. Сервис на высоте!
                 </p>
               </div>
             </li>
-            <li>
-              <div>
-  
-                <figure>
-                  <img src="#" alt="Фото поситителя">
-                  <figcaption>Оксана Григорьева</figcaption>
+
+            <li class="reviews__item">
+              <div class="reviews__visitor">
+                <figure class="reviews__visitor-info">
+                  <img class="reviews__visitor-photo" src="#" alt="Фото поситителя">
+                  <figcaption class="reviews__visitor-name">Оксана Григорьева</figcaption>
                 </figure>
-                <p>
+                <p class="reviews__visitor-descr">
                   Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе
                   больше нет подобных заведений
                 </p>
               </div>
             </li>
-            <li>
-              <div>
-  
-                <figure>
-                  <img src="#" alt="Фото поситителя">
-                  <figcaption>Никита Ященко</figcaption>
+
+            <li class="reviews__item">
+              <div class="reviews__visitor">
+                <figure class="reviews__visitor-info">
+                  <img class="reviews__visitor-photo" src="#" alt="Фото поситителя">
+                  <figcaption class="reviews__visitor-name">Никита Ященко</figcaption>
                 </figure>
-                <p>
+                <p class="reviews__visitor-descr">
                   Немного подвисала игра в VR очках, а так все норм. Крутое Оформление комнаты в стиле звездных войн,
                   попал в атмосферу космоса
                 </p>
@@ -221,37 +254,80 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div>
-          <h2>Частые вопросы</h2>
 
-          <ul class="list">
-            <li class="item">Можно ли забронировать комнату онлайн?</li>
-            <li class="item">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="item">Какая комната самая популярная?</li>
-            <li class="item">Как получить VIP карту?</li>
-            <li class="item">Какая комната самая популярная?</li>
+      <section class="faq">
+        <div>
+          <h2 class="faq__title">Частые вопросы</h2>
+
+          <ul class="faq__list">
+            <li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+            <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+            <li class="faq__item">Какая комната самая популярная?</li>
+            <li class="faq__item">Как получить VIP карту?</li>
+            <li class="faq__item">Какая комната самая популярная?</li>
           </ul>
         </div>
       </section>
     </main>
   
-    <footer id="contacts">
+    <footer class="contacts" id="contacts">
       <div>
-        <h2>Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
   
-        <address>
-          <p>г. Москва ул. Аквамарина, 16</p>
-          <a href="tel:89509302893">8(950)930-28-93</a>
-          <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+        <address class="contacts__address-group">
+          <ul class="contacts__address-list">
+            <li class="contacts__address-item">
+              <p class="contacts__address-link contacts__address-link_address">г. Москва ул. Аквамарина, 16</p>
+            </li>
+
+            <li class="contacts__address-item">
+              <a class="contacts__address-link contacts__address-link_phone" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+            </li>
+
+            <li class="contacts__address-item">
+              <a class="contacts__address-link contacts__address-link_e-mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            </li>
+          </ul>
         </address>
   
-        <ul>
-          <li><a href="#">Vkontakte</a></li>
-          <li><a href="#">Telegram</a></li>
+        <ul class="contacts__social-list">
+          <li class="contacts__social-item">
+            <!-- VK -->
+            <a class="contacts__social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor">
+                <path fill="#fff" d="M25 1C11.745 1 1 11.745 1 25s10.745 24 24 24 24-10.745 24-24S38.255 1 25 1Zm9.23 27.078s2.122 2.095 2.645 3.067c.015.02.022.04.027.05.213.357.263.635.158.843-.175.345-.775.515-.98.53h-3.75c-.26 0-.805-.068-1.465-.523-.508-.355-1.008-.938-1.495-1.505-.728-.845-1.358-1.575-1.993-1.575-.08 0-.16.012-.237.038-.48.154-1.095.84-1.095 2.665 0 .57-.45.897-.768.897H23.56c-.585 0-3.633-.205-6.333-3.052-3.305-3.488-6.28-10.483-6.305-10.548-.187-.453.2-.695.623-.695h3.787c.505 0 .67.308.785.58.135.317.63 1.58 1.443 3 1.317 2.315 2.125 3.255 2.772 3.255a.75.75 0 0 0 .348-.09c.845-.47.687-3.483.65-4.108 0-.117-.003-1.347-.435-1.937-.31-.427-.838-.59-1.158-.65.13-.179.3-.324.498-.422.58-.29 1.625-.333 2.662-.333h.578c1.125.015 1.415.087 1.822.19.825.198.843.73.77 2.553a39.754 39.754 0 0 0-.045 1.792c0 .15-.007.31-.007.48-.025.928-.055 1.98.6 2.413a.54.54 0 0 0 .285.082c.227 0 .912 0 2.767-3.183a24.299 24.299 0 0 0 1.488-3.184c.037-.066.147-.265.277-.343a.665.665 0 0 1 .31-.072h4.453c.485 0 .817.072.88.26.11.297-.02 1.204-2.053 3.957l-.907 1.197c-1.843 2.415-1.843 2.538.115 4.37Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <!-- Telegram -->
+            <a class="contacts__social-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor">
+                <path fill="#fff" d="M48 24a24 24 0 1 1-48 0 24 24 0 0 1 48 0Zm-23.14-6.282c-2.333.972-7.001 2.982-13.997 6.03-1.134.45-1.731.894-1.785 1.326-.09.729.825 1.017 2.07 1.41l.525.165c1.224.399 2.874.864 3.729.882.78.018 1.647-.3 2.604-.96 6.537-4.413 9.912-6.642 10.122-6.69.15-.036.36-.078.498.048.14.123.126.36.11.423-.09.387-3.68 3.723-5.537 5.451-.58.54-.99.921-1.074 1.008-.185.189-.373.375-.564.558-1.14 1.098-1.992 1.92.045 3.264.98.648 1.767 1.179 2.55 1.713.852.582 1.704 1.161 2.808 1.887.279.18.549.375.81.561.993.708 1.89 1.344 2.99 1.242.643-.06 1.306-.66 1.642-2.46.795-4.251 2.358-13.458 2.718-17.253a4.281 4.281 0 0 0-.04-.945 1.011 1.011 0 0 0-.341-.651 1.578 1.578 0 0 0-.93-.279c-.9.015-2.29.498-8.952 3.27Z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#">
+              <!-- Pinterest -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor">
+                <path fill="#fff" d="M25 0C11.195 0 0 11.194 0 25c0 10.238 6.156 19.031 14.965 22.898-.07-1.745-.014-3.842.435-5.739l3.216-13.623s-.798-1.596-.798-3.955c0-3.705 2.147-6.473 4.82-6.473 2.274 0 3.373 1.707 3.373 3.753 0 2.286-1.457 5.703-2.207 8.872-.627 2.653 1.33 4.815 3.946 4.815 4.736 0 7.926-6.083 7.926-13.292 0-5.478-3.69-9.58-10.402-9.58-7.584 0-12.308 5.656-12.308 11.973 0 2.18.642 3.714 1.649 4.902.462.547.526.767.359 1.395-.12.46-.396 1.567-.51 2.006-.165.633-.678.859-1.251.626-3.493-1.427-5.12-5.252-5.12-9.552 0-7.102 5.989-15.617 17.867-15.617 9.546 0 15.828 6.907 15.828 14.323 0 9.806-5.453 17.133-13.49 17.133-2.698 0-5.237-1.46-6.107-3.116 0 0-1.451 5.759-1.758 6.873-.53 1.927-1.568 3.854-2.517 5.355A24.99 24.99 0 0 0 25 50.003C38.806 50 50 38.807 50 25 50 11.194 38.806 0 25 0Z"/>
+              </svg>  
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#">
+              <!-- Stumbleupon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor">
+                <path d="M44.744 9.67A24.875 24.875 0 0 1 50 25c0 13.805-11.195 25-25 25-9.713 0-18.134-5.542-22.272-13.635h10.896c5.192 0 8.819-2.799 8.819-7.273 0-9.481-10.938-5.618-10.938-8.983 0-1.621 1.3-2.211 3.68-2.211h7.584c2.102 0 4.575.377 4.575 2.67v7.556c0 5.472 4.272 8.24 8.7 8.24 4.504 0 8.7-2.768 8.7-8.24V9.67Z"/>
+                <path d="M25 0a24.882 24.882 0 0 1 14.063 4.33v23.971a3.029 3.029 0 0 1-3.018 3.021 3.028 3.028 0 0 1-3.019-3.02v-7.183c0-5.734-2.902-8.12-6.681-8.12h-12.3c-4.454 0-8.148 2.835-8.148 7.33 0 2.3.985 5.67 5.644 6.506 3.796.684 5.294.485 5.294 2.516 0 1.971-2.209 1.971-5.125 1.971H.808A24.96 24.96 0 0 1 0 25C0 11.198 11.196 0 25 0Z"/>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
+
   </div>
 </body>
 
