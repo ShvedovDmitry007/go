@@ -10,3 +10,51 @@
   margin-bottom: 0;
 }
 
+.about__blockquote {
+  margin: 0;
+}
+
+.about__quote {
+  position: relative;
+  display: block;
+  margin-bottom: 40px;
+  padding-left: 55px;
+  font-size: 44px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.about__quote:before {
+  content: '\201c';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 900;
+  color: var(--violet);
+}
+
+.about__quote:after {
+  content: '\201d';
+  font-weight: 900;
+  color: var(--violet);
+}
+
+.about__photo-group {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 380px;
+} 
+
+.about__cite {
+  font-style: normal;
+}
+
+
+
+
+
+
+
+

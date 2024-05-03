@@ -1,17 +1,18 @@
-.hero {
+.hero-container {
   position: relative;
   height: 823px;
 }
 
-.hero:after {
+.hero-container:after {
   position: absolute;
   content: '';
-  display: block;
   top: 61px;
-  right: 0;
+  right: 130px;
   width: 675px;
   height: 762px;
   background-image: url('/img/hero.png');
+  background-repeat: no-repeat; 
+
 }
 
 .hero__title {
