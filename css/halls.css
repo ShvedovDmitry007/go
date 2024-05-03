@@ -23,19 +23,19 @@
   margin-bottom: 0;
 }
 
-.vibes {
+.halls__item_bg-vibes {
   background-image: url('../img/vibes.jpg');
 }
 
-.starwars {
+.halls__item_bg-starwars {
   background-image: url('../img/starwars.jpg');
 }
 
-.wildwest {
+.halls__item_bg-wildwest {
   background-image: url('../img/wildwest.jpg');
 }
 
-.neon {
+.halls__item_bg-neon {
   background-image: url('../img/neon.jpg');
 }
 

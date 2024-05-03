@@ -54,7 +54,7 @@
 
         <ul class="rest__list">
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/vr.png" alt="Очки виртуальной реальности">
               <figcaption class="rest__description">VR очки</figcaption>
             </figure>
@@ -62,14 +62,14 @@
           </li>
 
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/audio.png" alt="Аудио-система">
               <figcaption class="rest__description">Аудио-система 5.1 с отличным звуком</figcaption>
             </figure>
           </li>
 
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/micro.png" alt="Караоке">
               <figcaption class="rest__description">Караоке (4 микрофона)</figcaption>
             </figure>
@@ -77,7 +77,7 @@
           </li>
 
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/game.png" alt="Настольные игры">
               <figcaption class="rest__description">Настольные игры</figcaption>
             </figure>
@@ -85,14 +85,14 @@
           </li>
 
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/netflix.png" alt="Сервисы для просмотра кино">
               <figcaption class="rest__description">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
             </figure>
           </li>
 
           <li class="rest__item">
-            <figure class="rest__image-group>">
+            <figure class="rest__image-group">
               <img class="rest__image" src="img/sony.png" alt="Игровая приставка PlayStation 5">
               <figcaption class="rest__description">PlayStation 5</figcaption>
             </figure>
@@ -106,16 +106,16 @@
         <h2 class="halls__title">Наши залы</h2>
 
         <ol class="halls__list">
-          <li class="halls__item vibes">
+          <li class="halls__item halls__item_bg-vibes">
             <a class="halls__link" href="vibes.html" target="_blank">80's vibes</a>
           </li>
-          <li class="halls__item starwars">
+          <li class="halls__item halls__item_bg-starwars">
             <a class="halls__link" href="starwars.html" target="_blank">Star wars</a>
           </li>
-          <li class="halls__item wildwest">
+          <li class="halls__item halls__item_bg-wildwest">
             <a class="halls__link" href="wildwest.html" target="_blank">Wild west</a>
           </li>
-          <li class="halls__item neon">
+          <li class="halls__item halls__item_bg-neon">
             <a class="halls__link" href="neon.html" target="_blank">Neon style</a>
           </li>
         </ol>
@@ -126,75 +126,75 @@
       <div class="container">
         <h2 class="reserv__title">Забронировать</h2>
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="my-form">
+        <form class="reserv__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="my-form">
 
-          <div>
-            <fieldset>
-              <legend>Выбери зал</legend>
-              <input type="radio" name="halls" value="vibes">80's vibes
-              <input type="radio" name="halls" value="sw">Star wars
-              <input type="radio" name="halls" value="west">Wild west
-              <input type="radio" name="halls" value="style">Neon style
+          <div class="reserv__halls">
+            <fieldset class="reserv__form-fieldset">
+              <legend class="reserv__form-title">Выбери зал</legend>
+              <input class="reserv__form-input" type="radio" name="halls" value="vibes">80's vibes
+              <input class="reserv__form-input" type="radio" name="halls" value="sw">Star wars
+              <input class="reserv__form-input" type="radio" name="halls" value="west">Wild west
+              <input class="reserv__form-input" type="radio" name="halls" value="style">Neon style
             </fieldset>
           </div>
 
-          <div>
-            <fieldset>
-              <legend>Собери набор развлечений</legend>
-              <fieldset>
-                <legend>Приставка:</legend>
-                <input type="radio" name="console" value="ps">PlayStation
-                <input type="radio" name="console" value="sega">Sega Mega Drive
-                <input type="radio" name="console" value="xbox">X-box One S
-                <input type="radio" name="console" value="dendy">Dendy
+          <div class="reserv__form-game">
+            <fieldset class="reserv__form-fieldset">
+              <legend  class="reserv__form-title">Собери набор развлечений</legend>
+              <fieldset class="reserv__form-fieldset">
+                <legend class="reserv__form-title">Приставка:</legend>
+                <input class="reserv__form-input" type="radio" name="console" value="ps">PlayStation
+                <input class="reserv__form-input" type="radio" name="console" value="sega">Sega Mega Drive
+                <input class="reserv__form-input" type="radio" name="console" value="xbox">X-box One S
+                <input class="reserv__form-input" type="radio" name="console" value="dendy">Dendy
               </fieldset>
 
-              <fieldset>
-                <legend>Настольные игры:</legend>
-                <input type="checkbox" name="boardgames" value="jenga">Jenga
-                <input type="checkbox" name="boardgames" value="monopoly">Monopoly
-                <input type="checkbox" name="boardgames" value="munchkin">Манчкин
-                <input type="checkbox" name="boardgames" value="alias">Alias
+              <fieldset class="reserv__form-fieldset">
+                <legend class="reserv__form-title">Настольные игры:</legend>
+                <input class="reserv__form-input" type="checkbox" name="boardgames" value="jenga">Jenga
+                <input class="reserv__form-input" type="checkbox" name="boardgames" value="monopoly">Monopoly
+                <input class="reserv__form-input" type="checkbox" name="boardgames" value="munchkin">Манчкин
+                <input class="reserv__form-input" type="checkbox" name="boardgames" value="alias">Alias
               </fieldset>
 
-              <fieldset>
-                <legend>Дополнительно:</legend>
-                <input type="checkbox" name="add" value="karaoke">Караоке
-                <input type="checkbox" name="add" value="vr">VR
+              <fieldset class="reserv__form-fieldset">
+                <legend class="reserv__form-title">Дополнительно:</legend>
+                <input class="reserv__form-input" type="checkbox" name="add" value="karaoke">Караоке
+                <input class="reserv__form-input" type="checkbox" name="add" value="vr">VR
               </fieldset>
             </fieldset>
           </div>
 
-          <div>
-            <fieldset>
-              <legend>Выберете дату и время</legend>
-              <label>Дата*
-                <input type="date" name="date" required>
+          <div class="reserv__form-registration">
+            <fieldset class="reserv__form-fieldset">
+              <legend class="reserv__form-title">Выберете дату и время</legend>
+              <label class="reserv__form-label">Дата*
+                <input class="reserv__form-input" type="date" name="date" required>
               </label>
-              <label>Время*
-                <input type="time" name="time" required>
+              <label class="reserv__form-label">Время*
+                <input class="reserv__form-input" type="time" name="time" required>
               </label>
-              <label>Количество человек*
-                <input type="number" min="1" name="person" required>
+              <label class="reserv__form-label">Количество человек*
+                <input class="reserv__form-input" type="number" min="1" name="person" required>
               </label>
-              <label>Имя*
-                <input type="text" name="name" required>
+              <label class="reserv__form-label">Имя*
+                <input class="reserv__form-input" type="text" name="name" required>
               </label>
-              <label>Фамилия*
-                <input type="text" name="surname" required>
+              <label class="reserv__form-label">Фамилия*
+                <input class="reserv__form-input" type="text" name="surname" required>
               </label>
-              <label>Номер телефона*
-                <input type="tel" name="phone" required>
+              <label class="reserv__form-label">Номер телефона*
+                <input class="reserv__form-input" type="tel" name="phone" required>
               </label>
-              <label>
-                <input type="checkbox" required>Я старше 18 лет*
+              <label class="reserv__form-label">
+                <input class="reserv__form-input" type="checkbox" required>Я старше 18 лет*
               </label>
             </fieldset>
           </div>
 
-          <button type="submit">Забронировать</button>
-          <label>
-            <input type="checkbox" form="my-form" required> Согласен на обработку данных
+          <button class="reserv__form-button" type="submit">Забронировать</button>
+          <label class="reserv__form-label">
+            <input class="reserv__form-input" type="checkbox" form="my-form" required> Согласен на обработку данных
           </label>
         </form>
       </div>
@@ -295,15 +295,15 @@
       <address class="contacts__address-group">
         <ul class="contacts__address-list">
           <li class="contacts__address-item">
-            <p class="contacts__address-link contacts__address-link_address">г. Москва ул. Аквамарина, 16</p>
+            <p class="contacts__address-link contacts__address-link_address-icon">г. Москва ул. Аквамарина, 16</p>
           </li>
 
           <li class="contacts__address-item">
-            <a class="contacts__address-link contacts__address-link_phone" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+            <a class="contacts__address-link contacts__address-link_phone-icon" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
           </li>
 
           <li class="contacts__address-item">
-            <a class="contacts__address-link contacts__address-link_e-mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+            <a class="contacts__address-link contacts__address-link_e-mail-icon" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
           </li>
         </ul>
       </address>

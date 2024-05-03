@@ -34,6 +34,7 @@
 }
 
 .about__quote:after {
+  padding-left: 20px;
   content: '\201d';
   font-weight: 900;
   color: var(--violet);
