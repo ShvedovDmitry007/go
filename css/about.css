@@ -2,6 +2,14 @@
   margin-bottom: 70px;
 }
 
+.about__block {
+  display: flex;
+}
+
+.about__block-photo {
+  margin-right: 80px;
+}
+
 .about__description {
   margin-bottom: 20px;
 }
