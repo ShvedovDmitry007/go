@@ -1,3 +1,8 @@
+.header__row {
+  display: flex;
+  align-items: center;
+}
+
 .header__nav-list {
   display: flex;
   gap: 20px;

@@ -1,12 +1,12 @@
-.about__content {
-  margin-bottom: 70px;
+.about__text-content {
+  margin-bottom: 48px;
 }
 
 .about__block {
   display: flex;
 }
 
-.about__block-photo {
+.about__image {
   margin-right: 80px;
 }
 
@@ -26,7 +26,7 @@
   position: relative;
   display: block;
   margin-bottom: 40px;
-  padding-left: 55px;
+  padding-left: 31px;
   font-size: 44px;
   line-height: 1.1;
   text-transform: uppercase;
