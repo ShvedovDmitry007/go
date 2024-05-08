@@ -1,8 +1,10 @@
+@import 'normalize.css';
 @import 'style.css';
 @import 'header.css';
 @import 'hero.css';
 @import 'halls.css';
 @import 'reserv.css';
 @import 'about.css';
+@import 'reviews.css';
 @import 'faq.css';
 @import 'contacts.css';

@@ -4,15 +4,17 @@
 
 .halls__list {
   display: flex;
-  flex-direction: column;
-  row-gap: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .halls__item {
+  max-width: 580px;
+  width: 100%;
+  min-height: 349px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 710px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,7 +43,7 @@
 
 .halls__link {
   display: block;
-  max-width: 211px;
+  /* max-width: 211px; */
   font-weight: 700;
   font-size: 70px;
   line-height: 1.1;
