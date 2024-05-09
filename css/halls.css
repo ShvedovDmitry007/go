@@ -26,19 +26,19 @@
 }
 
 .halls__item_bg-vibes {
-  background-image: url('../img/vibes.jpg');
+  background-image: url('/img/vibes.jpg');
 }
 
 .halls__item_bg-starwars {
-  background-image: url('../img/starwars.jpg');
+  background-image: url('/img/starwars.jpg');
 }
 
 .halls__item_bg-wildwest {
-  background-image: url('../img/wildwest.jpg');
+  background-image: url('/img/wildwest.jpg');
 }
 
 .halls__item_bg-neon {
-  background-image: url('../img/neon.jpg');
+  background-image: url('/img/neon.jpg');
 }
 
 .halls__link {
