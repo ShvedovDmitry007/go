@@ -10,7 +10,7 @@
   right: 130px;
   width: 675px;
   height: 762px;
-  background-image: url('../img/hero.png');
+  background-image: url('./img/hero.png');
   background-repeat: no-repeat; 
 
 }

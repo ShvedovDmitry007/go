@@ -24,15 +24,15 @@
 }
 
 .contacts__address-link_address-icon {
-  background-image: url('../img/location.svg');
+  background-image: url('./img/location.svg');
 }
 
 .contacts__address-link_phone-icon {
-  background-image: url('../img/phone.svg');
+  background-image: url('./img/phone.svg');
 }
 
 .contacts__address-link_e-mail-icon {
-  background-image: url('../img/mail.svg');
+  background-image: url('./img/mail.svg');
 }
 
 .contacts__social-list {
