@@ -28,10 +28,10 @@
 }
 
 .faq__item:after {
-  content: url('./img/open-purple.svg');
+  content: url('../img/open-purple.svg');
 
 } 
 
 .faq__item:nth-child(even):after {
-  content: url('./img/open.svg');
+  content: url('../img/open.svg');
 }

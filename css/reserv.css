@@ -1,0 +1,108 @@
+.reserv {
+  background-color: #440f51;
+  padding: 80px 0;
+  
+}
+
+.reserv__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reserv__form-fieldset{
+  margin-bottom: 60px;
+}
+
+/* Halls  */
+
+.form-halls__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.form-halls__fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-halls__label {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+
+.form-game {
+  display: flex;
+  gap: 100px;
+}
+
+.game {
+  margin-bottom: 0;
+}
+
+.form-game-title {
+  margin-bottom: 40px;
+}
+
+.game__title {
+  text-align: start;
+  margin-bottom: 23px;
+}
+
+.game__label {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.game__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.game__input {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.registration__title {
+  margin-bottom: 60px;
+}
+
+.registration-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.registration__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserv__form-label {
+  font-size: 22px;
+}
+
+.reserv__form-input {
+  margin-right: 12px;
+}
+
+.reserv__form-button {
+  margin-left: auto;
+  padding: 16px 50px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 1.3;
+  border-radius: 10px;
+  color: var(--violet);
+  background-color: var(--white);
+}
+

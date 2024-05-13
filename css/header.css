@@ -1,9 +1,30 @@
+.header {
+  padding: 30px 0 50px;
+}
+
 .header__row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav-list {
   display: flex;
-  gap: 20px;
+  gap: 40px;
+}
+
+.header__nav-link {
+  font-size: 22px;
+  line-height: 2.3;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: 3px solid #cd06ff;
+  border-radius: 10px;
+  color: var(--white);
 }
