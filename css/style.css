@@ -111,7 +111,6 @@ legend {
 }
 
 .container {
-  width: 1440px;
-  padding: 0 130px;
+  max-width: 1180px;
   margin: 0 auto;
 }

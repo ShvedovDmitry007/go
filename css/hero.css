@@ -1,3 +1,7 @@
+.hero {
+  padding-top: 25px;
+}
+
 .hero-container {
   position: relative;
   height: 823px;
@@ -7,7 +11,7 @@
   position: absolute;
   content: '';
   top: 61px;
-  right: 130px;
+  right: 0;
   width: 675px;
   height: 762px;
   background-image: url('../img/hero.png');
@@ -71,7 +75,10 @@
   background-color: #6c0287;
 }
 
-.hero__btn-down {
-  /* display: flex; */
-
+.hero__btn-down-link {
+  display: block;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 0);
 }

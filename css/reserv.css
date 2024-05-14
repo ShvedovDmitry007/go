@@ -1,22 +1,15 @@
 .reserv {
   background-color: #440f51;
   padding: 80px 0;
-  
 }
 
 .reserv__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.reserv__form-fieldset{
-  margin-bottom: 60px;
-}
-
-/* Halls  */
-
-.form-halls__title {
+/* rooms  */
+.rooms__title {
   margin-bottom: 40px;
   font-weight: 700;
   font-size: 24px;
@@ -24,30 +17,56 @@
   text-align: center;
 }
 
-.form-halls__fieldset {
+.rooms__fieldset {
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 60px;
+  margin-bottom: 60px;
 }
 
-.form-halls__label {
+.rooms__label {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   color: var(--black);
 }
 
+.rooms__radio_custom {
+  display: none;
+}
 
-.form-game {
+.rooms__label {
+  position: relative;
   display: flex;
-  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 250px;
+  max-height: 55px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-color: var(--white);
+  color: var(--dark);
 }
 
-.game {
-  margin-bottom: 0;
+/* game  */
+.form-game {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin-bottom: 60px;
 }
 
-.form-game-title {
+.form-game__title {
   margin-bottom: 40px;
 }
 
@@ -72,30 +91,9 @@
   margin-right: 12px;
 }
 
-.registration__title {
-  margin-bottom: 60px;
-}
-
-.registration-group {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.registration__label {
-  display: flex;
-  flex-direction: column;
-}
-
-.reserv__form-label {
-  font-size: 22px;
-}
-
-.reserv__form-input {
-  margin-right: 12px;
-}
 
 .reserv__form-button {
-  margin-left: auto;
+  align-self: flex-end;
   padding: 16px 50px;
   font-weight: 700;
   font-size: 22px;
@@ -104,5 +102,142 @@
   border-radius: 10px;
   color: var(--violet);
   background-color: var(--white);
+}
+
+/* time */
+.reserv__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.time__title {
+  margin-bottom: 60px;
+}
+
+.time__label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+}
+
+.time__input {
+  display: block;
+}
+
+.time__block {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+}
+
+.time__block_info {
+  max-width: 280px;
+  row-gap: 14px;
+}
+
+.time__block_contacts {
+  row-gap: 14px;
+}
+
+.time__label_name,
+.time__label_phone-number,
+.time__label_mail,
+.time__label_lastname {
+  margin-bottom: 6px;
+}
+
+.time__input_name,
+.time__input_lastname,
+.time__input_phone-number,
+.time__input_mail {
+  padding: 10px;
+  width: 100%;
+  height: 52px;
+}
+
+.time__block_date {
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 36px;
+  align-self: flex-end;
+}
+
+.time__input_persons {
+  width: 100%;
+  height: 52px;
+}
+
+.time__input_time,
+.time__input_date {
+  height: 52px;
+  width: 134px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row-group {
+  display: flex;
+  column-gap: 32px;
+}
+
+.time__input_date::-webkit-input-placeholder {
+  background-image: url("../img/arrow-down-form.svg");
+  background-position: center right;
+  width: 100%;
+  height: 23px;
+  content: "Дата";
+  display: block;
+  background-repeat: no-repeat;
+  color: var(--dark);
+}
+
+.time__input_time::-webkit-input-placeholder {
+  background-image: url("../img/arrow-down-form.svg");
+  background-position: center right;
+  width: 100%;
+  height: 23px;
+  content: "Время";
+  display: block;
+  background-repeat: no-repeat;
+  color: var(--dark);
+}
+
+.time__input_persons {
+  padding-left: 20px;
+  padding-right: 27px;
+}
+
+.time__input_persons::-webkit-input-placeholder {
+  background-image: url("../img/arrow-down-form.svg");
+  background-position: center right;
+  width: 100%;
+  height: 23px;
+  content: "Время";
+  display: block;
+  background-repeat: no-repeat;
+  color: var(--dark);
+}
+
+.time__input_persons::-webkit-outer-spin-button,
+.time__input_persons::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
 }
 

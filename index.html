@@ -60,19 +60,21 @@
           </div>
         </div>
 
-        <button class="hero__btn">Забронировать</button>
+        <a href="#reserv" class="hero__btn">
+          Забронировать
+        </a>
 
-        <button class="hero__btn-down">
+        <a href="#rest" class="hero__btn-down-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" fill="none">
             <circle cx="48.5" cy="48.5" r="48" stroke="#fff"/>
             <path fill="#fff" d="m34.425 43.916 1.287-1.286 14.156 14.156-1.287 1.287z"/>
             <path fill="#fff" d="m48.58 58.073-1.286-1.287L61.45 42.631l1.287 1.287z"/>
           </svg>
-        </button>
+        </a>
       </div>
     </section>
 
-    <section class="rest">
+    <section class="rest" id="rest">
       <div class="container">
         <h2 class="rest__title">У нас есть всё для классного отдыха с друзьями!</h2>
 
@@ -82,7 +84,7 @@
           </li>
 
           <li class="rest__item rest__item_bg-audio">
-            <p class="rest__image-description">Аудио-система 5.1 с отличным звуком</p>
+            <p class="rest__image-description rest__image-description_short">Аудио-система 5.1 с отличным звуком</p>
           </li>
 
           <li class="rest__item rest__item_bg-micro">
@@ -132,28 +134,24 @@
 
         <form class="reserv__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="my-form">
 
-          <div class="reserv__form-halls form-halls">
-            <fieldset class="reserv__form-fieldset form-halls__fieldset">
-              <legend class="form-halls__title">Выбери зал</legend>
+          <div class="reserv__form-rooms rooms">
+            <fieldset class="rooms__fieldset">
+              <legend class="rooms__title">Выбери зал</legend>
 
-              <label class="form-halls__label">
-                <input class="form-halls__input" type="radio" name="halls" value="vibes">80's vibes
-              </label>
-              <label class="form-halls__label">
-                <input class="form-halls__input" type="radio" name="halls" value="sw">Star wars
-              </label>
-              <label class="form-halls__label">
-                <input class="form-halls__input" type="radio" name="halls" value="west">Wild west
-              </label>
-              <label class="form-halls__label">
-                <input class="form-halls__input" type="radio" name="halls" value="style">Neon style
-              </label>
+              <input id="vibes" class="radio rooms__radio rooms__radio_custom" type="radio" name="zal" value="80's vibes">
+              <label for="vibes" class="rooms__label" tabindex="0">80's vibes</label>
+              <input id="star-wars" class="radio rooms__radio rooms__radio_custom" type="radio" name="zal" value="star-wars">
+              <label for="star-wars" class="rooms__label" tabindex="0">Star wars</label>
+              <input id="wild-west" class="radio rooms__radio rooms__radio_custom" type="radio" name="zal" value="wild-west">
+              <label for="wild-west" class="rooms__label" tabindex="0">Wild west</label>
+              <input id="neon-style" class="radio rooms__radio rooms__radio_custom" type="radio" name="zal" value="neon-style">
+              <label for="neon-style" class="rooms__label" tabindex="0">Neon style</label>
             </fieldset>
           </div>
 
           <div class="reserv__form-game">
             <fieldset class="reserv__form-fieldset form-game">
-              <legend  class="form-game-title">Собери набор развлечений</legend>
+              <legend  class="form-game__title">Собери набор развлечений</legend>
 
               <fieldset class="reserv__form-fieldset game">
                 <legend class="game__title">Приставка:</legend>
@@ -202,37 +200,51 @@
             </fieldset>
           </div>
 
-          <div class="reserv__form-registration registration">
-            <fieldset class="reserv__form-fieldset registration-group">
-              <legend class="registration__title">Выберете дату и время</legend>
-              <label class="registration__label">Дата*
-                <input class="registration__input" type="date" name="date" required>
-              </label>
-              <label class="registration__label">Время*
-                <input class="registration__input" type="time" name="time" required>
-              </label>
-              <label class="registration__label">Количество человек*
-                <input class="registration__input" type="number" min="1" name="person" required>
-              </label>
-              <label class="registration__label">Имя*
-                <input class="registration__input" type="text" name="name" required>
-              </label>
-              <label class="registration__label">Фамилия*
-                <input class="registration__input" type="text" name="surname" required>
-              </label>
-              <label class="registration__label">Номер телефона*
-                <input class="registration__input" type="tel" name="phone" required>
-              </label>
-              <!-- <label class="reserv__form-label">
-                <input class="reserv__form-input" type="checkbox" required>Я старше 18 лет*
-              </label> -->
-            </fieldset>
+          <div class="reserv__form-time">
+            <div class="reserv__box">
+              <fieldset class="time">
+                <legend class="time__title">Выберете дату и время</legend>
+  
+                <div class="time__block time__block_date">
+                  <div class="row-group">
+                    <input placeholder="Дата" class="time__input time__input_date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" required="" name="date">
+                    <input placeholder="Время" class="time__input time__input_date" type="text" onfocus="(this.type='time')" onblur="(this.type='text')" required="" name="time">
+                  </div>
+  
+                  <input class="time__input time__input_persons" placeholder="Сколько человек" type="text" onfocus="(this.type='number')" onblur="(this.type='text')" required="" name="members">
+                </div>
+  
+                <div class="time__block time__block_info">
+                  <div class="group">
+                    <label for="name" class="time__label time__label_name">Имя</label>
+                    <input id="name" class="time__input time__input_name" type="text" required="" name="firstname">
+                  </div>
+  
+                  <div class="group">
+                    <label for="lastname" class="time__label time__label_lastname">Фамилия</label>
+                    <input id="lastname" class="time__input time__input_lastname" type="text" required="" name="lastname">
+                  </div>
+                </div>
+  
+                <div class="time__block time__block_contacts">
+                  <div class="group">
+                    <label for="phone" class="time__label time__label_phone-number">Телефон</label>
+                    <input id="phone" class="time__input time__input_phone-number" type="tel" required="" name="phone" inputmode="text">
+                  </div>
+  
+                  <div class="group">
+                    <label for="mail" class="time__label time__label_mail">E-mail</label>
+                    <input id="mail" class="time__input time__input_mail" type="email" name="mail">
+                  </div>
+                </div>
+              </fieldset>
+  
+              <button class="reserv__form-button" type="submit">Забронировать</button>
+            </div>
           </div>
 
-          <button class="reserv__form-button" type="submit">Забронировать</button>
-          <!-- <label class="reserv__form-label">
-            <input class="reserv__form-input" type="checkbox" form="my-form" required> Согласен на обработку данных
-          </label> -->
+
+
         </form>
       </div>
     </section>
