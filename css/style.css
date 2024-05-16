@@ -8,10 +8,13 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   --white: #ffffff;
-  --dark: #1B1A1B;
+  --dark: #1b1a1b;
   --black: #000000;
-  --purple: #440F51;
+  --purple: #440f51;
   --violet: #6c0287;
+  --purple-violet: #840aa3;
+  --dark-purple-violet: #640aa3;
+  --platinum: #eadeed;
 }
 
 html {

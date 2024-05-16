@@ -54,7 +54,26 @@
   border-radius: 8px;
   border: 3px solid transparent;
   background-color: var(--white);
-  color: var(--dark);
+  color: var(--black);
+  cursor: pointer;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .2s ease-in-out;
+}
+
+.rooms__label:hover {
+  border-color: var(--dark-purple-violet);
+  background-color: var(--platinum);
+}
+
+.rooms__label:focus {
+  outline: none;
+  border-color: var(--dark-purple-violet);
+  background-color: var(--white);
+}
+
+.rooms__label:active {
+  border-color: var(--white);
+  background-color: var( --violet);
+  color: var(--white);
 }
 
 /* game  */
@@ -89,6 +108,13 @@
   width: 27px;
   height: 27px;
   margin-right: 12px;
+  outline: 1px solid transparent;
+  transition: outline-color .2s ease-in-out;
+}
+
+.game__input:focus {
+  outline-color: #cd06ff;
+  outline-offset: 2px;
 }
 
 
@@ -102,6 +128,22 @@
   border-radius: 10px;
   color: var(--violet);
   background-color: var(--white);
+  border: 3px solid transparent;
+  transition: background-color .3s ease-in-out, border-color .2s ease-in-out;
+}
+
+.reserv__form-button:hover, .reserv__form-button:focus, .reserv__form-button:active {
+  border: 3px solid var(--violet);
+  background-color: var(--platinum);
+}
+
+.reserv__form-button:focus {
+  outline: none;
+  background-color: var(--white);
+}
+
+.reserv__form-button:active {
+  border: none;
 }
 
 /* time */
@@ -133,6 +175,12 @@
 
 .time__input {
   display: block;
+  transition: border-color .2s ease-in-out;
+}
+
+.time__input:focus {
+  outline: none;
+  border-color: #cd06ff;
 }
 
 .time__block {

@@ -31,4 +31,19 @@
   border: 3px solid #cd06ff;
   border-radius: 10px;
   color: var(--white);
+  transition: background-color .3s ease-in-out, border-color .2s ease-in-out;
+}
+
+.header__btn:hover {
+  border-color: var(--violet);
+  background-color: var(--violet);
+}
+
+.header__btn:focus {
+  background-color: var(--violet);
+}
+
+.header__btn:active {
+  border: 3px solid var(--black);
+  background-color: var(--dark-purple-violet);
 }

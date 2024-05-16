@@ -73,6 +73,15 @@
   border-radius: 10px;
   color: var(--white);
   background-color: #6c0287;
+  transition: background-color .3s ease-in-out;
+}
+
+.hero__btn:hover, .hero__btn:focus {
+  background-color: var( --purple-violet);
+}
+
+.hero__btn:active {
+  background-color: var(--dark-purple-violet);
 }
 
 .hero__btn-down-link {

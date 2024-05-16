@@ -51,6 +51,28 @@
   gap: 26px;
 }
 
+.contacts__social-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  outline: 1px solid transparent;
+  color: var(--white);
+  transition: color .3s ease-in-out, outline-color .2s ease-in-out;
+}
+
+.contacts__social-link:hover, .contacts__social-link:focus {
+  color: var(--platinum);
+}
+
+.contacts__social-link:focus {
+  outline-color: #cd06ff;
+}
+
+.contacts__social-link:active {
+  outline: none;
+  color: #cd06ff;
+}
+
 .contacts__map {
   align-self: flex-end;
   height: 274px;
