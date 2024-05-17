@@ -76,6 +76,12 @@
   color: var(--white);
 }
 
+input[type="radio"]:checked + .rooms__label {
+  border-color: var(--white);
+  background-color: var( --violet);
+  color: var(--white);
+}
+
 /* game  */
 .form-game {
   margin: 0 auto;
@@ -98,6 +104,7 @@
   display: flex;
   align-items: center;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .game__label:not(:last-child) {
@@ -110,13 +117,13 @@
   margin-right: 12px;
   outline: 1px solid transparent;
   transition: outline-color .2s ease-in-out;
+  cursor: pointer;
 }
 
 .game__input:focus {
   outline-color: #cd06ff;
   outline-offset: 2px;
 }
-
 
 .reserv__form-button {
   align-self: flex-end;
@@ -132,18 +139,20 @@
   transition: background-color .3s ease-in-out, border-color .2s ease-in-out;
 }
 
-.reserv__form-button:hover, .reserv__form-button:focus, .reserv__form-button:active {
-  border: 3px solid var(--violet);
+.reserv__form-button:hover {
+  border-color: var(--violet);
   background-color: var(--platinum);
 }
 
 .reserv__form-button:focus {
   outline: none;
   background-color: var(--white);
+  border-color: var(--violet);
 }
 
 .reserv__form-button:active {
-  border: none;
+  background-color: var(--platinum);
+  border-color: transparent;
 }
 
 /* time */

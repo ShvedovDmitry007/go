@@ -8,13 +8,6 @@
 
 .faq__item {
   margin-bottom: 20px;
-}
-
-.faq__item:last-child {
-  margin-bottom: 0;
-}
-
-.faq__btn {
   padding: 20px 70px;
   width: 100%;
   display: inline-flex;
@@ -25,9 +18,40 @@
   font-size: 24px;
   background-color: var(--white);
   color: var(--dark);
+  cursor: pointer;
 }
 
-.faq__item:nth-child(even) button {
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__item:after {
+  width: 46px;
+  height: 46px;
+  content: url("../img/open-purple.svg");
+}
+
+.faq__item:nth-child(even):after {
+  content: url("../img/open.svg");
+}
+
+.faq__item:nth-child(even) {
   background-color: var(--purple);
   color: var(--white);
+}
+
+.faq__item:hover:after {
+  content: url("../img/open-purple-hover.svg");
+}
+
+.faq__item:nth-child(even):hover:after {
+  content: url("../img/open-hover.svg");
+}
+
+.faq__item:active:after {
+  content: url("../img/open-purple-active.svg");
+}
+
+.faq__item:nth-child(even):active:after {
+  content: url("../img/open-active.svg");
 }

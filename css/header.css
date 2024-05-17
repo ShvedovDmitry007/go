@@ -21,6 +21,23 @@
   font-size: 22px;
   line-height: 2.3;
   text-transform: uppercase;
+  outline: 1px solid transparent;
+  outline-offset: 5px;
+  transition: color .3s ease-in-out, outline-color .2s ease-in-out;
+}
+
+.header__nav-link:hover {
+  color: #cd06ff;
+}
+
+.header__nav-link:focus {
+  outline-color: #cd06ff;
+  color: #EADEED;
+}
+
+.header__nav-link:active {
+  outline: none;
+  color: var(--purple-violet);
 }
 
 .header__btn {
@@ -31,6 +48,7 @@
   border: 3px solid #cd06ff;
   border-radius: 10px;
   color: var(--white);
+  outline: none;
   transition: background-color .3s ease-in-out, border-color .2s ease-in-out;
 }
 

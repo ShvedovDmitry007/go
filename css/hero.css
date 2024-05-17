@@ -73,6 +73,7 @@
   border-radius: 10px;
   color: var(--white);
   background-color: #6c0287;
+  outline: none;
   transition: background-color .3s ease-in-out;
 }
 
@@ -87,7 +88,34 @@
 .hero__btn-down-link {
   display: block;
   position: absolute;
+  width: 97px;
+  height: 97px;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, 0);
+}
+
+.arrow {
+  color: var(--white);
+  fill: transparent;
+  transition: fill .5s, color .5s;
+}
+
+.arrow:hover {
+  fill: var(--white);
+  color: var(--dark-purple-violet);
+}
+
+.hero__btn-down-link:focus {
+  outline-offset: 0;
+  outline: 2px solid #cd06ff;
+}
+
+.hero__btn-down-link:active {
+  outline: none;
+}
+
+.arrow:active {
+  fill: #cd06ff;
+  color: var(--white);
 }

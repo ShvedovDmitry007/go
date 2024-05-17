@@ -18,6 +18,7 @@
 
 .contacts__address-item {
   margin-bottom: 11px;
+
 }
 
 .contacts__address-item:first-child {
@@ -32,6 +33,23 @@
   padding-left: 60px;
   background-repeat: no-repeat;
   background-position: left;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+  transition: color .3s ease-in-out, outline-color  .3s ease-in-out;
+}
+
+.contacts__address-item:hover a {
+  color: #cd06ff;
+}
+
+.contacts__address-link:focus {
+  outline-color: #cd06ff;
+  color: var(--platinum);
+}
+
+.contacts__address-item:active a {
+  outline: none;
+  color: var(--purple-violet);
 }
 
 .contacts__address-link_address-icon {
@@ -88,3 +106,22 @@
   line-height: 1.2;
 }
 
+.contacts__copy-text_mod {
+  transition: color .3s ease-in-out,  outline-color .3s ease-in-out;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+}
+
+.contacts__copy-text_mod:hover {
+  color: #cd06ff;
+}
+
+.contacts__copy-text_mod:focus {
+  outline-color: #cd06ff;
+  color: #EADEED;
+}
+
+.contacts__copy-text_mod:active {
+  outline: none;
+  color: var(--purple-violet);
+}
