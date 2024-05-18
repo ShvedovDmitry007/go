@@ -18,6 +18,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  transition: transform .3s ease-in-out;
+}
+
+.rest__item:hover {
+  transform: scale(1.1);
 }
 
 .rest__image-description {
