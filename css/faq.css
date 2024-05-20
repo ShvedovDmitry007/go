@@ -26,13 +26,17 @@
 }
 
 .faq__item:after {
+  content: '';
   width: 46px;
   height: 46px;
-  content: url("../img/open-purple.svg");
+  background-image: url("../img/open-purple.svg");
+  transition: background-image .2s ease-in-out;
 }
 
 .faq__item:nth-child(even):after {
-  content: url("../img/open.svg");
+  content: '';
+  background-image: url("../img/open.svg");
+  transition: background-image .2s ease-in-out;
 }
 
 .faq__item:nth-child(even) {
@@ -41,17 +45,17 @@
 }
 
 .faq__item:hover:after {
-  content: url("../img/open-purple-hover.svg");
+  background-image: url("../img/open-purple-hover.svg");
 }
 
 .faq__item:nth-child(even):hover:after {
-  content: url("../img/open-hover.svg");
+  background-image: url("../img/open-hover.svg");
 }
 
 .faq__item:active:after {
-  content: url("../img/open-purple-active.svg");
+  background-image: url("../img/open-purple-active.svg");
 }
 
 .faq__item:nth-child(even):active:after {
-  content: url("../img/open-active.svg");
+  background-image: url("../img/open-active.svg");
 }

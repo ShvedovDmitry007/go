@@ -39,11 +39,11 @@
 }
 
 .contacts__address-item:hover a {
-  color: #cd06ff;
+  color: var(--focus-color);
 }
 
 .contacts__address-link:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--focus-color);
   color: var(--platinum);
 }
 
@@ -83,12 +83,12 @@
 }
 
 .contacts__social-link:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--focus-color);
 }
 
 .contacts__social-link:active {
   outline: none;
-  color: #cd06ff;
+  color: var(--focus-color);
 }
 
 .contacts__map {
@@ -113,12 +113,12 @@
 }
 
 .contacts__copy-text_mod:hover {
-  color: #cd06ff;
+  color: var(--focus-color);
 }
 
 .contacts__copy-text_mod:focus {
-  outline-color: #cd06ff;
-  color: #EADEED;
+  outline-color: var(--focus-color);
+  color: var(--platinum);
 }
 
 .contacts__copy-text_mod:active {

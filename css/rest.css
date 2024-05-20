@@ -4,13 +4,13 @@
   max-width: 880px;
 }
 
-.rest__list {
+.rest-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px 20px;
 }
 
-.rest__item {
+.rest-list__item {
   display: flex;
   align-items: flex-end;
   flex-basis: 380px;
@@ -21,45 +21,49 @@
   transition: transform .3s ease-in-out;
 }
 
-.rest__item:hover {
+.rest-list__item:nth-child(3n-1) {
+  transform: translateY(70px);
+}
+
+.rest-list__item:hover {
   transform: scale(1.1);
 }
 
-.rest__image-description {
+.rest-list__description {
   display: block;
   font-weight: 700;
 }
 
-.rest__image-description_short {
+.rest-list__description_short {
   max-width: 199px;
 }
 
-.rest__item_bg-vr {
+.rest-list__item_bg-vr {
   background-image: url("../img/vr.png");
   padding: 0 40px 34px;
 }
 
-.rest__item_bg-audio {
+.rest-list__item_bg-audio {
   background-image: url("../img/audio.png");
   padding: 0 40px 6px;
 }
 
-.rest__item_bg-micro {
+.rest-list__item_bg-micro {
   background-image: url("../img/micro.png");
     padding: 0 40px 34px;
 }
 
-.rest__item_bg-game {
+.rest-list__item_bg-game {
   background-image: url("../img/game.png");
     padding: 0 40px 34px;
 }
 
-.rest__item_bg-netflix {
+.rest-list__item_bg-netflix {
   background-image: url("../img/netflix.png");
   padding: 0 40px 6px;
 }
 
-.rest__item_bg-sony {
+.rest-list__item_bg-sony {
   background-image: url("../img/sony.png");
     padding: 0 40px 34px;
 }

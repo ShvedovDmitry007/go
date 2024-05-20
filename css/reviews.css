@@ -4,20 +4,44 @@
 
 .reviews__visitor {
   display: flex;
+  gap: 20px;
 }
 
-.reviews__visitor-info {
+.visitor__info {
   text-align: center;
-  margin-right: 20px;
 }
 
-.reviews__visitor-photo {
-  margin-bottom: 11px;
-  border-radius: 100%;
-}
 
-.reviews__visitor-descr {
+.reviews__descr {
   max-width: 680px;
   padding-top: 52px;
   line-height: 1.4;
+}
+
+.visitor__photo {
+  margin-bottom: 11px;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+}
+
+.visitor__photo_maks {
+  background-image: url('../img/person-maks.png');
+}
+
+.visitor__photo_oksana {
+  background-image: url('../img/person-oksana.png');
+}
+
+.visitor__photo_nikita {
+  background-image: url('../img/person-nikita.png');
+}
+
+.visitor__photo:after  {
+  content: '';
+  display: block;
+  height: 100%;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgb(196, 196, 196) 0%, rgb(108, 2, 135) 100%);
+  border-radius: 100%;
+  opacity: 0.4;
 }

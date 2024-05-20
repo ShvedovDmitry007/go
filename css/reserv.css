@@ -1,5 +1,5 @@
 .reserv {
-  background-color: #440f51;
+  background-color: var(--purple);
   padding: 80px 0;
 }
 
@@ -121,7 +121,7 @@ input[type="radio"]:checked + .rooms__label {
 }
 
 .game__input:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--focus-color);
   outline-offset: 2px;
 }
 
@@ -189,7 +189,7 @@ input[type="radio"]:checked + .rooms__label {
 
 .time__input:focus {
   outline: none;
-  border-color: #cd06ff;
+  border-color: var(--focus-color);
 }
 
 .time__block {

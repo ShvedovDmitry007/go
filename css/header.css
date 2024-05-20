@@ -27,11 +27,11 @@
 }
 
 .header__nav-link:hover {
-  color: #cd06ff;
+  color: var(--focus-color);
 }
 
 .header__nav-link:focus {
-  outline-color: #cd06ff;
+  outline-color: var(--focus-color);
   color: #EADEED;
 }
 
@@ -45,7 +45,7 @@
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--focus-color);
   border-radius: 10px;
   color: var(--white);
   outline: none;
