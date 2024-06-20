@@ -548,6 +548,10 @@ input[type='number'] {
     align-items: end;
   }
 
+  .row-group {
+    width: 100%;
+  }
+
   .time {
     row-gap: 35px;
     margin-bottom: 36px;
@@ -559,25 +563,24 @@ input[type='number'] {
     margin-bottom: 24px;
   }
 
+  .time__block {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
   .time__block_date {
     flex-wrap: wrap;
     row-gap: 15px;
   }
 
-  .time__block_info  {
-    flex-basis: 280px;
-  }
-
-  .time__block_contacts {
-    flex-basis: 300px;
-  }
-  
   .time__input_time, 
   .time__input_date, 
   .time__input_persons {
     letter-spacing: 0;
     font-size: 14px;
     line-height: 1.28571;
+    width: 100%;
+    max-width: 100%;
   }
 
   .reserv__form-button {

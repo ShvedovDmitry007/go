@@ -196,7 +196,7 @@
   }
 
   .rest-list__item {
-    flex-basis: 135px;
+    flex-basis: 48%;
     min-height: 75px;
     background-size: 100% 100%;
   }
