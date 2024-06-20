@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="./img/icon.svg">
+  <title>GAME OVER</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+
+        <button class="header__burger-btn">
+          <svg width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <rect width="54" height="5" rx="2" fill="currentColor"/>
+            <rect y="12" width="54" height="5" rx="2" fill="currentColor"/>
+            <rect y="24" width="31" height="5" rx="2" fill="currentColor"/>
+          </svg>
+        </button>
+
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo" src="./img/logo.svg" alt="Логотип игровой территории GAME OVER">
+        </a>
+    
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#halls">Залы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#about">О нас</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#reserv">Бронь</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="header__btn">Заказать звонок</button>
+      </div>
+
+      <a class="header__back-link" href="index.html">
+        <svg class="header__back-arrow" xmlns="http://www.w3.org/2000/svg" width="31" height="16" viewBox="0 0 31 16" fill="currentColor">
+          <path fill="currentColor" d="M.293 7.293a1 1 0 0 0 0 1.414l6.364 6.364a1 1 0 0 0 1.414-1.414L2.414 8l5.657-5.657A1 1 0 0 0 6.657.93L.293 7.293ZM31 7H1v2h30V7Z"/>
+        </svg>
+        
+        Вернуться назад
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero-halls hero-halls__bg-neon">
+      <div class="container hero-halls__container">
+        <h1 class="hero-halls__title">neon style</h1>
+      </div>
+    </section>
+
+    <p class="main__descr">
+      Неоновый свет, кислотный диджей, кеды и фотолюминесценция футболки. Если вы любитель темных комнат, музыкального драйва и светящейся одежды, то вы точно знаете что сегодня надеть. 
+    </p>
+
+    <section class="what-room">
+      <div class="container">
+        <h2 class="what-room__title">Что есть в комнате?</h2>
+
+        <div class="what-room__content">
+          <img class="what-room__image" width="600" height="424" src="./img/neon.jpg" alt="">
+
+          <div class="what-room__descr">
+            <p class="what-room__text">Вы сможете встать у диджейского пульта и создать свой сет, который порадует остальных участников комнаты...или нет.</p>
+            <p class="what-room__text">В комнате также присутствует большое предметов с элементами фосфора, включая игровые консоли, стулья и диваны. Вы точно не потеряетесь внутри.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="other">
+      <div class="container">
+        <h2 class="other__title">Другие комнаты</h2>
+
+        <ul class="other__list">
+          <li class="other__item other__item_vibes">
+            <a class="other__link" href="vibes.html">
+              80&rsquo;s vibes
+            </a>
+          </li>
+          <li class="other__item other__item_wild-west">
+            <a class="other__link" href="wildwest.html">
+              wild west
+            </a>
+          </li>
+          <li class="other__item other__item_star-wars">
+            <a class="other__link" href="starwars.html">
+              Star wars
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="contacts" id="contacts">
+    <div class="container contacts__container">
+      <h2 class="contacts__title title">Контакты</h2>
+
+      <div class="contacts__content">
+
+        <div class="contacts__communication">
+
+          <address class="contacts__address address">
+            <ul class="address__list">
+              <li class="address__item">
+                <p class="address__link address__link_location">г. Москва <br> ул. Усачёва, 29 к3</p>
+              </li>
+    
+              <li class="address__item">                  
+                <a class="address__link address__link_phone" href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+              </li>
+    
+              <li class="address__item">
+                <a class="address__link address__link_mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+              </li>
+            </ul>
+          </address>
+    
+          <ul class="contacts__social-list">
+            <!-- VK -->
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="currentColor">
+                  <path d="M25 1C11.745 1 1 11.745 1 25s10.745 24 24 24 24-10.745 24-24S38.255 1 25 1Zm9.23 27.078s2.122 2.095 2.645 3.067c.015.02.022.04.027.05.213.357.263.635.158.843-.175.345-.775.515-.98.53h-3.75c-.26 0-.805-.068-1.465-.523-.508-.355-1.008-.938-1.495-1.505-.728-.845-1.358-1.575-1.993-1.575-.08 0-.16.012-.237.038-.48.154-1.095.84-1.095 2.665 0 .57-.45.897-.768.897H23.56c-.585 0-3.633-.205-6.333-3.052-3.305-3.488-6.28-10.483-6.305-10.548-.187-.453.2-.695.623-.695h3.787c.505 0 .67.308.785.58.135.317.63 1.58 1.443 3 1.317 2.315 2.125 3.255 2.772 3.255a.75.75 0 0 0 .348-.09c.845-.47.687-3.483.65-4.108 0-.117-.003-1.347-.435-1.937-.31-.427-.838-.59-1.158-.65.13-.179.3-.324.498-.422.58-.29 1.625-.333 2.662-.333h.578c1.125.015 1.415.087 1.822.19.825.198.843.73.77 2.553a39.754 39.754 0 0 0-.045 1.792c0 .15-.007.31-.007.48-.025.928-.055 1.98.6 2.413a.54.54 0 0 0 .285.082c.227 0 .912 0 2.767-3.183a24.299 24.299 0 0 0 1.488-3.184c.037-.066.147-.265.277-.343a.665.665 0 0 1 .31-.072h4.453c.485 0 .817.072.88.26.11.297-.02 1.204-2.053 3.957l-.907 1.197c-1.843 2.415-1.843 2.538.115 4.37Z"/>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Telegram -->
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="currentColor">
+                  <path d="M48 24a24 24 0 1 1-48 0 24 24 0 0 1 48 0Zm-23.14-6.282c-2.333.972-7.001 2.982-13.997 6.03-1.134.45-1.731.894-1.785 1.326-.09.729.825 1.017 2.07 1.41l.525.165c1.224.399 2.874.864 3.729.882.78.018 1.647-.3 2.604-.96 6.537-4.413 9.912-6.642 10.122-6.69.15-.036.36-.078.498.048.14.123.126.36.11.423-.09.387-3.68 3.723-5.537 5.451-.58.54-.99.921-1.074 1.008-.185.189-.373.375-.564.558-1.14 1.098-1.992 1.92.045 3.264.98.648 1.767 1.179 2.55 1.713.852.582 1.704 1.161 2.808 1.887.279.18.549.375.81.561.993.708 1.89 1.344 2.99 1.242.643-.06 1.306-.66 1.642-2.46.795-4.251 2.358-13.458 2.718-17.253a4.281 4.281 0 0 0-.04-.945 1.011 1.011 0 0 0-.341-.651 1.578 1.578 0 0 0-.93-.279c-.9.015-2.29.498-8.952 3.27Z"/>
+                </svg>
+              </a>
+            </li>
+
+            <!-- Pinterest -->
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="currentColor">
+                  <path d="M25 0C11.195 0 0 11.194 0 25c0 10.238 6.156 19.031 14.965 22.898-.07-1.745-.014-3.842.435-5.739l3.216-13.623s-.798-1.596-.798-3.955c0-3.705 2.147-6.473 4.82-6.473 2.274 0 3.373 1.707 3.373 3.753 0 2.286-1.457 5.703-2.207 8.872-.627 2.653 1.33 4.815 3.946 4.815 4.736 0 7.926-6.083 7.926-13.292 0-5.478-3.69-9.58-10.402-9.58-7.584 0-12.308 5.656-12.308 11.973 0 2.18.642 3.714 1.649 4.902.462.547.526.767.359 1.395-.12.46-.396 1.567-.51 2.006-.165.633-.678.859-1.251.626-3.493-1.427-5.12-5.252-5.12-9.552 0-7.102 5.989-15.617 17.867-15.617 9.546 0 15.828 6.907 15.828 14.323 0 9.806-5.453 17.133-13.49 17.133-2.698 0-5.237-1.46-6.107-3.116 0 0-1.451 5.759-1.758 6.873-.53 1.927-1.568 3.854-2.517 5.355A24.99 24.99 0 0 0 25 50.003C38.806 50 50 38.807 50 25 50 11.194 38.806 0 25 0Z"/>
+                </svg>  
+              </a>
+            </li>
+
+            <!-- Stumbleupon -->
+            <li class="contacts__social-item">
+              <a class="contacts__social-link" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="currentColor">
+                  <path d="M44.744 9.67A24.875 24.875 0 0 1 50 25c0 13.805-11.195 25-25 25-9.713 0-18.134-5.542-22.272-13.635h10.896c5.192 0 8.819-2.799 8.819-7.273 0-9.481-10.938-5.618-10.938-8.983 0-1.621 1.3-2.211 3.68-2.211h7.584c2.102 0 4.575.377 4.575 2.67v7.556c0 5.472 4.272 8.24 8.7 8.24 4.504 0 8.7-2.768 8.7-8.24V9.67Z"/>
+                  <path d="M25 0a24.882 24.882 0 0 1 14.063 4.33v23.971a3.029 3.029 0 0 1-3.018 3.021 3.028 3.028 0 0 1-3.019-3.02v-7.183c0-5.734-2.902-8.12-6.681-8.12h-12.3c-4.454 0-8.148 2.835-8.148 7.33 0 2.3.985 5.67 5.644 6.506 3.796.684 5.294.485 5.294 2.516 0 1.971-2.209 1.971-5.125 1.971H.808A24.96 24.96 0 0 1 0 25C0 11.198 11.196 0 25 0Z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts__map"></div>
+      </div>
+
+      <div class="contacts__copyright">
+        <span class="contacts__copy-text">© Game Over, 2022</span>
+
+        <div class="contacts__developer">
+          <p class="contacts__copy-text">Design by Anastasia Ilina</p>
+          <a class="contacts__copy-text contacts__copy-text_mod"  href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
+        </div>
+      </div>
+      
+      
+    </div>
+  </footer>
+    
+</body>
+
+</html>

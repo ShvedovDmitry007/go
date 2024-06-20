@@ -118,3 +118,21 @@ legend {
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    padding: 0 20px;
+  }
+}

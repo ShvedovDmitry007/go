@@ -1,6 +1,11 @@
 .reserv {
   background-color: var(--purple);
-  padding: 80px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reserv__title {
+  margin-bottom: 46px;
 }
 
 .reserv__form {
@@ -44,7 +49,6 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 250px;
-  max-height: 55px;
   height: 55px;
   font-weight: 700;
   font-size: 30px;
@@ -83,41 +87,60 @@ input[type="radio"]:checked + .rooms__label {
 }
 
 /* game  */
-.form-game {
+.set {
   margin: 0 auto;
+  margin-bottom: 57px;
   display: flex;
   justify-content: space-between;
   max-width: 980px;
-  margin-bottom: 60px;
 }
 
-.form-game__title {
-  margin-bottom: 40px;
+.set__title {
+  margin-bottom: 38px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.console-game {
+  gap: 16px;
+}
+
+.board-games {
+  margin-right: 16px;
+}
+
+.additionally {
+  margin-right: 12px;
 }
 
 .game__title {
   text-align: start;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .game__label {
   display: flex;
   align-items: center;
+  gap: 12px;
   font-size: 22px;
   cursor: pointer;
-}
-
-.game__label:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .game__input {
   width: 27px;
   height: 27px;
-  margin-right: 12px;
   outline: 1px solid transparent;
   transition: outline-color .2s ease-in-out;
   cursor: pointer;
+}
+
+.game__input_checkbox {
+  width: 25px;
+  height: 25px;
 }
 
 .game__input:focus {
@@ -127,7 +150,7 @@ input[type="radio"]:checked + .rooms__label {
 
 .reserv__form-button {
   align-self: flex-end;
-  padding: 16px 50px;
+  padding: 14px 48px 11px 48px;
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
@@ -172,7 +195,8 @@ input[type="radio"]:checked + .rooms__label {
 }
 
 .time__title {
-  margin-bottom: 60px;
+  margin-bottom: 39px;
+  line-height: 1.2;
 }
 
 .time__label {
@@ -237,11 +261,12 @@ input[type="radio"]:checked + .rooms__label {
 
 .time__input_time,
 .time__input_date {
+  letter-spacing: -1px;
   height: 52px;
   width: 134px;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 16px;
+  padding-right: 24px;
 }
 
 .row-group {
@@ -272,8 +297,9 @@ input[type="radio"]:checked + .rooms__label {
 }
 
 .time__input_persons {
-  padding-left: 20px;
-  padding-right: 27px;
+  letter-spacing: -1.1px;
+  padding-left: 18px;
+  padding-right: 24px;
 }
 
 .time__input_persons::-webkit-input-placeholder {
@@ -296,5 +322,269 @@ input[type='number'] {
   appearance: textfield;
   -moz-appearance: textfield;
   -webkit-appearance: textfield;
+}
+
+@media (max-width: 1200px) {
+  .reserv {
+    padding-top: 59px;
+    padding-bottom: 59px;
+  }
+
+  .reserv__title {
+    margin-bottom: 41px;
+    font-size: 30px;
+    line-height: 1.33333;
+  }
+
+  .rooms__title {
+    margin-bottom: 25px;
+  }
+
+  .rooms__label {
+    flex-basis: 180px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .set__title {
+    margin-bottom: 27px;
+  }
+
+  .board-games {
+    margin-right: 5px;
+  }
+
+  .additionally {
+    margin-right: 67px;
+  }
+
+  .time {
+    margin-bottom: 50px;
+  }
+
+  .time__title {
+    margin-bottom: 27px;
+  }
+
+  .time__block {
+    flex-basis: 253px;
+  }
+
+  .reserv__form-button {
+    font-size: 18px;
+    padding: 11px 44px 9px 41px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .reserv {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .reserv__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .rooms__title {
+    margin-bottom: 29px;
+  }
+
+  .rooms__label {
+    flex-basis: 150px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 6px;
+  }
+
+  .rooms__fieldset {
+    column-gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .set {
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    gap: 32px 0;
+  }
+
+  .set__title {
+    margin-bottom: 29px;
+  }
+
+  .game {
+    flex-basis: 47%;
+    gap: 20px;
+  }
+
+  .board-games, .additionally {
+    margin-right: 0;
+  }
+
+  .game__title {
+    margin-bottom: 24px;
+  }
+
+  .game__label {
+    gap: 20px;
+  }
+
+  .game__input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .time {
+    row-gap: 42px;
+    margin-bottom: 48px;
+  }
+
+  .time__title {
+    margin-bottom: 29px;
+  }
+
+  .row-group {
+    column-gap: 13px;
+  }
+
+  .time__input_time, .time__input_date {
+    padding-left: 17px;
+  }
+
+  .time__block_date {
+    flex-basis: 688px;
+    flex-wrap: nowrap;
+    column-gap: 106px;
+  }
+
+  .time__block_info  {
+    flex-basis: 280px;
+  }
+
+  .time__block_contacts {
+    flex-basis: 300px;
+  }
+
+  .reserv__form-button {
+    font-size: 22px;
+    padding: 14px 48px 11px 47px;
+  }
+  
+}
+
+@media (max-width: 740px) {
+  .reserv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .reserv__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+
+  .rooms__title {
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 1.28571;
+  }
+
+  .rooms__fieldset {
+    margin-bottom: 31px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 14px;
+  }
+
+  .rooms__label {
+    flex-basis: 130px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.28571;
+    border-radius: 4px;
+  }
+
+  .set {
+    margin-bottom: 30px;
+    gap: 27px 0;
+  }
+
+  .set__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+
+  .game {
+    flex-basis: 100%;
+    gap: 15px;
+  }
+
+  .board-games, .additionally {
+    gap: 19px;
+  }
+
+  .game__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+
+  .game__label {
+    font-size: 16px;
+  }
+
+  .game__input {
+    width: 30px;
+    height: 30px;
+  }
+
+  .game__label:last-child {
+    align-items: end;
+  }
+
+  .time {
+    row-gap: 35px;
+    margin-bottom: 36px;
+  }
+
+  .time__title {
+    font-size: 14px;
+    line-height: 1.28571;
+    margin-bottom: 24px;
+  }
+
+  .time__block_date {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+
+  .time__block_info  {
+    flex-basis: 280px;
+  }
+
+  .time__block_contacts {
+    flex-basis: 300px;
+  }
+  
+  .time__input_time, 
+  .time__input_date, 
+  .time__input_persons {
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 1.28571;
+  }
+
+  .reserv__form-button {
+    padding: 15px 56px 13px 55px;
+    font-size: 18px;
+    line-height: 1.44444;
+    border-radius: 4px;
+  } 
 }
 
