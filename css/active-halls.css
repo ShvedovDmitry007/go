@@ -40,19 +40,19 @@
   background-repeat: no-repeat;
 }
 
-.hero-halls__bg-vibes {
+.hero-halls_bg-vibes {
   background-image: url("../img/vibes-hero-image.png");
 }
 
-.hero-halls__bg-star-wars {
+.hero-halls_bg-star-wars {
   background-image: url("../img/star-wars-hero-image.png");
 }
 
-.hero-halls__bg-wild-west {
+.hero-halls_bg-wild-west {
   background-image: url("../img/wild-west-image.png");
 }
 
-.hero-halls__bg-neon {
+.hero-halls_bg-neon {
   background-image: url("../img/neon-hero-image.png");
 }
 

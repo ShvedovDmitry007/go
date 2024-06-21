@@ -18,6 +18,8 @@
 
 .about__image {
   grid-area: image;
+  background-image: url('/img/about.jpg');
+  background-size: 100% 100%;
 }
 
 .about__text-content {
@@ -203,11 +205,7 @@
     "image"
     "quote";
   }
-
-  .about__image {
-    height: 100%;
-  }
-
+  
   .about__text-content {
     align-self: start;
     gap: 15px;
